@@ -191,7 +191,16 @@ def check_node_up_behaviour():
 
 
 
-if __name__ == "__main__":
+def test_main():
     main()
+
+def test_check_node_down_behaviour():
     check_node_down_behaviour()
+
+def test_check_node_up_behaviour():
     check_node_up_behaviour()
+
+if __name__ == "__main__":
+    test_main()
+    test_check_node_down_behaviour()
+    test_check_node_up_behaviour()

@@ -222,5 +222,8 @@ def verifyLocalConnections(counts, key, k):
         print(f'{ex}')
         exit(1)
 
-if __name__ == "__main__":
+def test_main():
     main()
+
+if __name__ == "__main__":
+    test_main()
