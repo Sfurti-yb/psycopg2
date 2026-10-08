@@ -1,0 +1,5 @@
+{
+  "build": ["python3.12", "setup.py", "build"],
+  "tests": ["sh", "-c", "PYTHONPATH=build/lib.3.12 python3.12 -c \"import tests; tests.unittest.main(defaultTest='tests.test_suite')\" --verbose"],
+  "yb_tests": ["sh", "-c", "pip install -q -e . && python3.12 -m pytest tests/test_fallback_topology.py tests/test_rr1.py tests/test_rr2.py -v; rm -f lib/_psycopg.cpython-312-x86_64-linux-gnu.so"]
+}
